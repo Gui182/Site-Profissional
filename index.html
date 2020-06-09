@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guilherme Oliveira</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fondamento&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/49a94d018d.js" crossorigin="anonymous"></script>
+  <script src="/script/projetos.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="menu">
+      <ul class="container">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#portfolio">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="titulo">
+      <h1 class="titulo">Guilherme Oliveira</h1>
+      <h2 class="sub-titulo">Jr. Front End Developer</h2>
+    </div>
+  </header>
+
+  
+  <section class="sobre container" id="sobre">
+
+
+    <h2>Sobre</h2>
+    <figure class="avatar">
+      <img id="fotoAvatar" src="./img/guilherme-avatar.PNG" alt="Paulo Silveira">
+    </figure>
+    <p>
+      Formado em Ciências da Computação pela Universidade Paulista sempre
+      tive um apreço pela tecnologia começando desde jovem com jogos, WEB e
+      redes de computadores.
+    </p>
+
+    <p>
+      Meu primeiro contato com programação foi na ETEC onde aprendi os primeiros
+      passos em VBNET e orientação a Objetos. Foi o lugar que me
+      ingressou na área de tecnologia de redes de computadores me proporcionando
+      uma visão geral de onde a tecnologia pode ser aplicada e quais são os seus
+      benefícios para o negócio.
+    </p>
+
+    <p>
+      Continuei minha carreira ingressando no ensino superior onde me
+      abriu um leque maior de onde a tecnologia está presente e de que formas ela
+      pode ser aplicada na sociedade, aprendi sobre pesquisas, bases científicas,
+      estudos de casos e as principais formações em Computação.
+    </p>
+
+    <p>
+      Com o término da faculdade procurei me manter atualizado visando as principais
+      demandas do mercado através de podcasts (Hipster Ponto Tech é o meu favorito),
+      informações providas através dos berços da tecnologia como por exemplo o Vale do
+      Sílicio e percebi que o desenvolvimento está muito presente e pretende continuar
+      assim por um bom tempo ainda.
+    </p>
+    <p>
+      Estou iniciando minha carreira como desenvolvedor e espero poder contribuir muito
+      para essa comunidade que é muito solidaria e isso é um grande diferencial quando
+      um profissional busca evolução para sua carreira, me siga nas rede sociais que
+      coloquei abaixo e fico a disposição para qualquer ajuda ou oportunidade de aprender.
+    </p>
+
+    <p>Saudações.</p>
+
+  </section>
+
+  <section class="portfolio container" id="portfolio">
+    <h2>Projetos</h2>
+    <div class="projeto-grid">
+      <li id="flappybird">
+        <a href="flappy/flappy.html"><img src="https://images.unsplash.com/photo-1563278689-3519903a3e97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Flappy Bird"></a>
+        <span>
+          Flappy Bird
+        </span>
+      </li>
+
+      <li id="rocketseat">
+        <a href="https://github.com/GuiLaTT/NLW-"><img src="https://images.unsplash.com/photo-1527694747350-2d483ffcff28?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1347&q=80" alt="NLW RocketSeat"></a>
+        <span>
+          NLW RocketSeat
+        </span>
+      </li>
+    </div>
+
+  </section>
+
+
+  <section class="contato container" id="contato">
+    <h2>Contato</h2>
+
+    <div class="grid icons">
+      <a target="_blank" href="https://github.com/GuiLaTT">
+        <i class="fab fa-github"></i>
+      </a>
+      <a target="_blank" href="https://www.linkedin.com/in/guilherme-oliveira-5131a213b/">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a target="_blank" href="https://www.instagram.com/goliveira182/?hl=pt-br">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </section>
+
+  <script>
+
+    let imgAvatar = document.getElementById('fotoAvatar')
+    if (screen.width < 600) {
+      imgAvatar.src = './img/guilherme-avatar-mobile.PNG'
+    } else {
+      imgAvatar.src = './img/guilherme-avatar.PNG'
+    }
+  </script>
+</body>
+
+</html>

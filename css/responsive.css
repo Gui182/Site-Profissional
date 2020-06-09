@@ -1,0 +1,42 @@
+@media (max-width: 800px){
+    .titulo h1, h2 {
+      font-size: 2em;
+    }
+}
+
+@media(min-width: 700px){
+  .titulo h2, h1 {
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 1200px) {
+    .container {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1200px;
+    }
+  }
+
+  @media (max-width: 600px){
+    .sobre p {
+      font-size: 1em;
+    }
+
+    .contato a {
+      font-size: 4em;
+    }
+
+    .projeto-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .sobre .avatar {
+      clip-path: circle(35%);
+      margin-left: 2em;
+      float: right;
+    }
+
+  }
+
+

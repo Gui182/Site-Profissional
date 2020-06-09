@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/fundoIndex.jpg');
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.menu {
+    background-color: #333;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+    border-bottom: solid 5px #4faddb;
+    
+  }
+
+  .menu ul {
+      display: flex;
+      justify-content: space-around;
+  }
+
+  .menu li {
+    list-style: none; 
+   }
+   
+   .menu a {
+     display: block;
+     padding: 10px 20px;
+     transition: background-color 1s, color 1s;
+   }
+
+.menu a:active,
+.menu a:hover {
+  background-color: white;
+  color: black;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.titulo {
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+    animation: 1s ease 500ms animacaoTitulo forwards;
+  }
+
+.titulo h1,h2 {
+      font-size: 6em;
+      font-family: 'Architects Daughter', cursive;
+
+      font-family: 'Fondamento', cursive;
+  }
+
+  
+  @keyframes animacaoTitulo {
+    from {
+      transform: scale(0.2) translateY(50vh);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1) translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .sobre,
+  .contato,
+  .portfolio {
+    padding: 2em;
+    min-height: 100vh;
+    padding-top: 60px;
+  }
+  
+  .projeto-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .projeto-grid li {
+    display: flex;
+    height: 250px;
+    width: 250px;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    cursor: pointer;
+}  
+
+.projeto-grid li span {
+  margin-top: 6px;
+  flex: 1;
+  display:flex;
+  align-items: center;
+  font-size: 20px;
+  color: lightgray;
+}
+
+.projeto-grid li a img {
+    margin-top: 20px;
+    width: 100%;
+}
+
+  .contato {
+    min-height: 50vh;
+  }
+  
+.sobre h2,
+.contato h2,
+.portfolio h2 {
+  margin-bottom: 1.5em;
+  font-size: 2em;
+}
+
+  .sobre .avatar {
+    clip-path: circle(50%);
+    margin-left: 2em;
+    float: right;
+  }
+  
+
+  .sobre p {
+    font-size: 2em;
+    margin-bottom: 20px;  
+   
+  }
+
+  .portfolio a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: initial;
+  }
+
+  .portfolio a {
+    height: 200px;
+  }
+
+  .contato .icons {
+    text-align: left;
+  }
+  
+  .contato a {
+    color: black;
+    font-size: 8em;
+    transition: text-shadow 1s;
+  }
+
+  .contato a:active,
+  .contato a:hover  {
+    text-decoration: none;
+    text-shadow: 0px 0px 10px rgba(255,255,255,.5);
+  }
